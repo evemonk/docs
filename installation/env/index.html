@@ -11,7 +11,7 @@
       <meta http-equiv="x-ua-compatible" content="ie=edge">
       
       
-        <link rel="canonical" href="https://evemonk.github.io/docs/installation/docker/">
+        <link rel="canonical" href="https://evemonk.github.io/docs/installation/env/">
       
       
       
@@ -38,7 +38,7 @@
     
     
       
-        <title>Docker - EveMonk Documentation</title>
+        <title>Environment variables - EveMonk Documentation</title>
       
     
     
@@ -96,6 +96,10 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
     
+      <a href="#environment-variables-reference" tabindex="1" class="md-skip">
+        Skip to content
+      </a>
+    
     
       <header class="md-header" data-md-component="header">
   <nav class="md-header-nav md-grid">
@@ -117,7 +121,7 @@
               EveMonk Documentation
             </span>
             <span class="md-header-nav__topic">
-              Docker
+              Environment variables
             </span>
           
         </div>
@@ -270,18 +274,6 @@
           
           
 
-
-  <li class="md-nav__item">
-    <a href="../env/" title="Environment variables" class="md-nav__link">
-      Environment variables
-    </a>
-  </li>
-
-        
-          
-          
-          
-
   
 
 
@@ -289,11 +281,25 @@
     
     <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
     
+      
     
-    <a href="./" title="Docker" class="md-nav__link md-nav__link--active">
-      Docker
+    
+    <a href="./" title="Environment variables" class="md-nav__link md-nav__link--active">
+      Environment variables
     </a>
     
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../docker/" title="Docker" class="md-nav__link">
+      Docker
+    </a>
   </li>
 
         
@@ -309,17 +315,96 @@
               </div>
             
             
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
           
           <div class="md-content">
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/evemonk/docs/edit/master/docs/installation/docker.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
+                  <a href="https://github.com/evemonk/docs/edit/master/docs/installation/env.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
                 
                 
-                  <h1>Docker</h1>
-                
-                
+                <h1 id="environment-variables-reference">Environment variables reference</h1>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Example</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>SECRET_KEY_BASE</code></td>
+<td><code>3508788ace632c...</code></td>
+<td>Rails secret key for cookies. etc.</td>
+</tr>
+<tr>
+<td><code>EVEMONK_DATABASE_URL</code></td>
+<td><code>postgres://postgres@postgresql/evemonk_production</code></td>
+<td>Database for rails app.</td>
+</tr>
+<tr>
+<td><code>EVE_ONLINE_SSO_CLIENT_ID</code></td>
+<td><code>c037a...</code></td>
+<td>EveOnline Client ID from https://developers.eveonline.com/</td>
+</tr>
+<tr>
+<td><code>EVE_ONLINE_SSO_SECRET_KEY</code></td>
+<td><code>RIgQfJmpd...</code></td>
+<td>EveOnline Secret Key from https://developers.eveonline.com/</td>
+</tr>
+<tr>
+<td><code>REDIS_URL</code></td>
+<td><code>redis://redis:6379/1</code></td>
+<td>Redis server url</td>
+</tr>
+<tr>
+<td><code>SENTRY_DSN</code></td>
+<td><code>https://...:...@sentry.io/111111</code></td>
+<td>Sentry url. Skip if you don't have sentry account.</td>
+</tr>
+<tr>
+<td><code>RAILS_SERVE_STATIC_FILES</code></td>
+<td><code>true</code></td>
+<td>Rails serve static files</td>
+</tr>
+<tr>
+<td><code>RAILS_LOG_TO_STDOUT</code></td>
+<td><code>true</code></td>
+<td>Rails logs to stdout</td>
+</tr>
+<tr>
+<td><code>ELASTICSEARCH_URL</code></td>
+<td><code>http://elasticsearch:9200</code></td>
+<td>Elasticsearch server url</td>
+</tr>
+<tr>
+<td><code>RAILS_MAX_THREADS</code></td>
+<td><code>2</code></td>
+<td>Max threads for ruby server puma</td>
+</tr>
+<tr>
+<td><code>RAILS_MIN_THREADS</code></td>
+<td><code>2</code></td>
+<td>Min threads for ruby server puma</td>
+</tr>
+</tbody>
+</table>
                 
                   
                 
@@ -340,7 +425,7 @@
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid">
         
-          <a href="../env/" title="Environment variables" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../requirements/" title="Requirements" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-flex__cell md-flex__cell--shrink">
               <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
             </div>
@@ -349,11 +434,25 @@
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                Environment variables
+                Requirements
               </span>
             </div>
           </a>
         
+        
+          <a href="../docker/" title="Docker" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                Docker
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
         
       </nav>
     </div>
