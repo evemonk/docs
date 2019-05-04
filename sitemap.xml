@@ -20,4 +20,14 @@
      <lastmod>2019-05-04</lastmod>
      <changefreq>daily</changefreq>
     </url>
+    <url>
+     <loc>https://evemonk.github.io/docs/development/architecture/</loc>
+     <lastmod>2019-05-04</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://evemonk.github.io/docs/development/docker_images/</loc>
+     <lastmod>2019-05-04</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
 </urlset>
