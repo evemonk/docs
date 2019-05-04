@@ -1,5 +1,3 @@
-all : build
-
-build :
+all:
 	mkdocs gh-deploy
 
