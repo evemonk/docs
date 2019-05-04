@@ -13,7 +13,8 @@ nav:
     - Requirements: installation/requirements.md
     - Environment variables: installation/env.md
     - Docker: installation/docker.md
+  - Development:
+    - Architecture: development/architecture.md
+    - Docker images: development/docker_images.md
 
-theme:
-  name: 'material'
-
+theme: 'material'
