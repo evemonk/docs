@@ -11,9 +11,11 @@ nav:
   - Home: index.md
   - Installation:
     - Requirements: installation/requirements.md
+    - Eve Online SSO: installation/eve_online_sso.md
     - Environment variables: installation/env.md
     - Docker: installation/docker.md
   - Development:
+    - Repositories:  development/repositories.md
     - Architecture: development/architecture.md
     - Docker images: development/docker_images.md
 
